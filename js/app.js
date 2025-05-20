@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tbody.innerHTML = '<tr><td colspan="4" class="text-center">Cargando...</td></tr>';
     propiedadesData = [];
 
-    const fullUrl = `http://api.scraperapi.com?api_key=${API_KEY}&url=${encodeURIComponent(url)}`;
+    const fullUrl = `https://api.scraperapi.com?api_key=${API_KEY}&url=${encodeURIComponent(url)}`;
 
     fetch(fullUrl)
       .then(response => response.text())
